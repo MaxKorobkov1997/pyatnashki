@@ -18,11 +18,12 @@ namespace pyatnashki
         Button but;
         Button[,] but3 = new Button[kol,kol];
         private int[,] mao = new int[kol, kol];
+
         public Form1()
         {
             InitializeComponent();
-            MapNamber();
             CreatMap();
+            MapNamber();
             activ();
             this.Width = kol1*sise+(kol1-1) * kol1 + 20;
             this.Height = kol1 * sise + (kol1+1)  *3 +30 + 20;
@@ -47,30 +48,28 @@ namespace pyatnashki
                     but.Click += MyNewButton_Click;
                     but.BackColor = Color.White;
                     Controls.Add(but);
-                    if (mao[i,j] != 0)
-                        but.Text = Convert.ToString(mao[i,j]);
                     but3[i, j] = but;
                     but3[i, j].Font = new Font("Times New Roman", 14);
                 }
             }
         }
+
         private void MapNamber()
         {
-            int a = 1;
+            int a = 0;
             for (int i = 0; i < kol; i++)
             {
                 for (int j = 0; j < kol; j++)
                 {
-                    if (a != kol1*kol1)
-                    {
-                        mao[i, j] = a;
-                        a++;
-                    }
-                    else
-                        mao[i, j] = 0;
+                    mao[i, j] = a;
+                    if (mao[i, j] != 0)
+                        but3[i, j].Text = Convert.ToString(a);
+                    a++;
+                    
                 }
             }
         }
+
         private void MyNewButton_Click(object sender, EventArgs e)
         {
 
@@ -79,6 +78,7 @@ namespace pyatnashki
             Prow(a);
             activ();
         }
+
         private void Prow(int a)
         {
             bool q;
@@ -101,34 +101,33 @@ namespace pyatnashki
                 }
             }
         }
+
         private void activ()
         {
-            int x, y;
+            int x, y, x1=0, y1=0;
             for (int i = 0; i < kol; i++)
-                for (int j = 0; j < kol; j++)
-                    but3[i, j].Enabled = false;
-            for (int i = 0; i < kol; i++)
-            {
                 for (int j = 0; j < kol; j++)
                 {
+                    but3[i, j].Enabled = false;
                     if (mao[i, j] == 0)
                     {
-                        x = i;
-                        y = j;
-                        if (x++ < kol1 - 1)
-                            but3[x, y].Enabled = true;
-                        x = i;
-                        if (y++ < kol1 - 1)
-                            but3[x, y].Enabled = true;
-                        y = j;
-                        if (y-- > 0)
-                            but3[x, y].Enabled = true;
-                        y = j;
-                        if (x-- > 0)
-                            but3[x, y].Enabled = true;
+                        x1 = i; 
+                        y1 = j;
                     }
                 }
-            }
+            x = x1;
+            y = y1;
+            if (x++ < kol1 - 1)
+                but3[x, y].Enabled = true;
+            x = x1;
+            if (y++ < kol1 - 1)
+                but3[x, y].Enabled = true;
+            y = y1;
+            if (y-- > 0)
+                but3[x, y].Enabled = true;
+            y = y1;
+            if (x-- > 0)
+                but3[x, y].Enabled = true;
         }
     }
 }
