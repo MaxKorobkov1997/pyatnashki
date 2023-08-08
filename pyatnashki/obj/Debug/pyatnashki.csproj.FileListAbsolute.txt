@@ -20,3 +20,14 @@ C:\Users\Макс\Desktop\pyatnashki\pyatnashki\obj\Debug\pyatnashki.csproj.Gene
 C:\Users\Макс\Desktop\pyatnashki\pyatnashki\obj\Debug\pyatnashki.csproj.CoreCompileInputs.cache
 C:\Users\Макс\Desktop\pyatnashki\pyatnashki\obj\Debug\pyatnashki.exe
 C:\Users\Макс\Desktop\pyatnashki\pyatnashki\obj\Debug\pyatnashki.pdb
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\bin\Debug\pyatnashki.exe.config
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\bin\Debug\pyatnashki.exe
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\bin\Debug\pyatnashki.pdb
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.csproj.AssemblyReference.cache
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.csproj.SuggestedBindingRedirects.cache
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.Form1.resources
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.Properties.Resources.resources
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.csproj.GenerateResource.cache
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.csproj.CoreCompileInputs.cache
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.exe
+C:\Users\Макс\Documents\GitHub\pyatnashki\pyatnashki\obj\Debug\pyatnashki.pdb

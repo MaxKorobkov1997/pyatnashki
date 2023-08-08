@@ -24,8 +24,8 @@ namespace pyatnashki
             MapNamber();
             CreatMap();
             activ();
-            this.Width = kol1*sise+(kol1-1) * kol1;
-            this.Height = kol1 * sise + (kol1+1)  *3 +30;
+            this.Width = kol1*sise+(kol1-1) * kol1 + 20;
+            this.Height = kol1 * sise + (kol1+1)  *3 +30 + 20;
 
         }
 
@@ -43,7 +43,7 @@ namespace pyatnashki
                     but3[i, j] = new Button();
                     but = new Button();
                     but.Size = new Size(sise, sise);
-                    but.Location = new Point(j * sise,i * sise);
+                    but.Location = new Point( j * sise,20+i * sise);
                     but.Click += MyNewButton_Click;
                     but.BackColor = Color.White;
                     Controls.Add(but);
@@ -103,7 +103,7 @@ namespace pyatnashki
         }
         private void activ()
         {
-            int x=0, y=0;
+            int x, y;
             for (int i = 0; i < kol; i++)
                 for (int j = 0; j < kol; j++)
                     but3[i, j].Enabled = false;
